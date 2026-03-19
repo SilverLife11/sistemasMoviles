@@ -50,8 +50,26 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center_horizontal"
-        android:text="Button" />
+        android:layout_width="227dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#8659CC"
+        android:drawableLeft="?android:attr/actionModeFindDrawable"
+        android:drawableTint="#0F0D0D"
+        android:text="Todas las notas"
+        android:translationX="91dp"
+        android:translationY="403dp"
+        app:layout_constraintBottom_toBotttomOf="button2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="227dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#8659CC"
+        android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+        android:drawableTint="#070707"
+        android:text="Calendario"
+        android:translationX="91dp"
+        android:translationY="470dp"
+        app:layout_constraintBottom_toBotttomOf="button2" />
+
 </FrameLayout>
