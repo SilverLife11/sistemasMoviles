@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CalendarDateText">
+        <item name="android:textColor">#F9F9FAFF</item>
+    </style>
+
+    <style name="CalendarWeekText">
+        <item name="android:textColor">#B39DDB</item>
+    </style>
+
+</resources>

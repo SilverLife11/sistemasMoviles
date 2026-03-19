@@ -1,6 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#0D0221">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCalendario"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:background="#5E35B1"
+        android:title="Calendario"
+        android:titleTextColor="#FFFFFF"
+        android:elevation="6dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Card contenedora -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCalendario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#1A0B3D"
+        app:layout_constraintTop_toBottomOf="@id/toolbarCalendario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Texto fecha -->
+            <TextView
+                android:id="@+id/tvFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selecciona una fecha"
+                android:textColor="#F9F9FAFF"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"/>
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1A0B3D"
+                android:dateTextAppearance="@style/CalendarDateText"
+                android:weekDayTextAppearance="@style/CalendarWeekText" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/btnVerNotas"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:contentDescription="Ver notas del día"-->
+<!--        android:src="@android:drawable/ic_menu_agenda"-->
+<!--        android:tint="#FFFFFF"-->
+<!--        app:backgroundTint="#7E57C2"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_margin="20dp"/>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
