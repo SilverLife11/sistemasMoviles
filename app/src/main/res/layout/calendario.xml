@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0D0221">
-
-    <!-- Toolbar -->
+    
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarCalendario"
         android:layout_width="0dp"
@@ -19,7 +18,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Card contenedora -->
     <androidx.cardview.widget.CardView
         android:id="@+id/cardCalendario"
         android:layout_width="0dp"
