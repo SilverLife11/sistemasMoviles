@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SistemasProyect</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="titulo_nota">Nueva Nota</string>
+    <string name="crear_nota">Crear nueva nota</string>
+    <string name="hint_titulo">Título</string>
+    <string name="hint_contenido">Escribe tu nota...</string>
+    <string name="menu">Botón de menú</string>
 </resources>

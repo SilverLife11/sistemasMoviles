@@ -1,24 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0D0221">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="60dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="4dp"
-        android:background="#161111"
-        android:backgroundTint="#120F16"
-        android:contentDescription="boton de menu"
-        android:drawableBottom="@android:drawable/ic_menu_sort_by_size"
-        android:drawableTint="#0F0E0E"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:background="#5E35B1"
+        android:elevation="6dp"
+        android:title="Nueva Nota"
+        android:titleTextColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Botón menú -->
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Botón de menú"
+        android:src="@android:drawable/ic_menu_sort_by_size"
+        app:tint="#FFFFFF"
+        app:layout_constraintTop_toTopOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="8dp"/>
+
+    <!-- Card -->
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -26,10 +39,10 @@
         app:cardBackgroundColor="#1A0B3D"
         app:cardCornerRadius="16dp"
         app:cardElevation="8dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar">
+        app:layout_constraintEnd_toEndOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,39 +50,36 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- Título -->
             <EditText
                 android:id="@+id/etTitulo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:autofillHints="none"
-                android:backgroundTint="#7E57C2"
                 android:hint="Título"
-                android:inputType="text"
-                android:padding="10dp"
                 android:textColor="#FFFFFF"
                 android:textColorHint="#B39DDB"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:backgroundTint="#7E57C2"
+                android:inputType="text"
+                android:autofillHints="none"
+                android:padding="10dp"/>
 
-            <!-- Separador -->
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginVertical="10dp"
-                android:background="#7E57C2" />
+                android:background="#7E57C2"/>
 
-            <!-- Contenido -->
             <EditText
                 android:id="@+id/etContenido"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:autofillHints="none"
-                android:background="@android:color/transparent"
-                android:gravity="top"
                 android:hint="Escribe tu nota..."
-                android:inputType="textMultiLine"
                 android:textColor="#EDE7F6"
-                android:textColorHint="#9575CD" />
+                android:textColorHint="#9575CD"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:autofillHints="none"
+                android:background="@android:color/transparent"/>
 
         </LinearLayout>
 
@@ -79,41 +89,12 @@
         android:id="@+id/btnGuardar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
         android:contentDescription="Guardar"
         android:src="@android:drawable/ic_menu_save"
-        android:tint="@color/white"
+        app:tint="#FFFFFF"
         app:backgroundTint="#7E57C2"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="0dp"
-        android:layout_height="72dp"
-        android:layout_marginTop="4dp"
-        android:background="#5E35B1"
-        android:elevation="6dp"
-        android:title="Nueva Nota"
-        android:titleTextColor="#161414"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:foregroundTint="#161313"
-        android:inputType="text"
-        android:text="Crear nueva nota"
-        android:textColor="#BA8EE6"
-        android:textSize="30sp"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="4dp"
-        tools:visibility="visible" />
+        android:layout_margin="20dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
