@@ -59,16 +59,16 @@
     </androidx.cardview.widget.CardView>
 
 
-<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-<!--        android:id="@+id/btnVerNotas"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:contentDescription="Ver notas del día"-->
-<!--        android:src="@android:drawable/ic_menu_agenda"-->
-<!--        android:tint="#FFFFFF"-->
-<!--        app:backgroundTint="#7E57C2"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        android:layout_margin="20dp"/>-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnVerNotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:contentDescription="Ver notas del día"
+        android:src="@android:drawable/ic_menu_agenda"
+        android:tint="#0F0C0C"
+        app:backgroundTint="#7E57C2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
