@@ -6,30 +6,18 @@
     android:layout_height="match_parent"
     android:background="#0D0221">
 
-    <!-- Toolbar -->
-
-    <!-- Card para agrupar -->
-
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:foregroundTint="#161313"
-        android:inputType="text"
-        android:text="Crear nueva nota"
-        android:textSize="30sp"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="4dp" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="60dp"
         android:layout_height="46dp"
-        android:backgroundTint="#6E0CC1"
+        android:layout_marginTop="4dp"
+        android:background="#161111"
+        android:backgroundTint="#120F16"
         android:contentDescription="boton de menu"
         android:drawableBottom="@android:drawable/ic_menu_sort_by_size"
-        android:drawableTint="#0F0E0E" />
+        android:drawableTint="#0F0E0E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
@@ -87,7 +75,6 @@
 
     </androidx.cardview.widget.CardView>
 
-    <!-- Botón guardar -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnGuardar"
         android:layout_width="wrap_content"
@@ -113,5 +100,20 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:foregroundTint="#161313"
+        android:inputType="text"
+        android:text="Crear nueva nota"
+        android:textColor="#BA8EE6"
+        android:textSize="30sp"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="4dp"
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

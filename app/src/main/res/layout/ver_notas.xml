@@ -10,7 +10,7 @@
         android:id="@+id/toolbarNotas"
         android:layout_width="0dp"
         android:layout_height="72dp"
-        android:background="#4A148C"
+        android:background="#5E35B1"
         android:elevation="6dp"
         android:title="Notas"
         android:titleTextColor="#1F1C1C"
