@@ -12,6 +12,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SistemasProyect">
         <activity
+            android:name=".BusquedaActivity"
+            android:exported="false"
+            android:label="@string/title_activity_busqueda"
+            android:theme="@style/Theme.SistemasProyect" />
+        <activity
+            android:name=".CalendarioActivity"
+            android:exported="false"
+            android:label="@string/title_activity_calendario"
+            android:theme="@style/Theme.SistemasProyect" />
+        <activity
+            android:name=".ListaNotasActivity"
+            android:exported="false"
+            android:label="@string/title_activity_lista_notas"
+            android:theme="@style/Theme.SistemasProyect" />
+        <activity
+            android:name=".NuevaNotaActivity"
+            android:exported="false"
+            android:label="@string/title_activity_nueva_nota"
+            android:theme="@style/Theme.SistemasProyect" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"

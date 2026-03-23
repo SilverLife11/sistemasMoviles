@@ -6,4 +6,8 @@
     <string name="hint_titulo">Título</string>
     <string name="hint_contenido">Escribe tu nota...</string>
     <string name="menu">Botón de menú</string>
+    <string name="title_activity_nueva_nota">NuevaNotaActivity</string>
+    <string name="title_activity_lista_notas">ListaNotasActivity</string>
+    <string name="title_activity_calendario">CalendarioActivity</string>
+    <string name="title_activity_busqueda">BusquedaActivity</string>
 </resources>

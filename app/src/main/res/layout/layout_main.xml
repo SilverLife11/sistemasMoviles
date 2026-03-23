@@ -30,15 +30,6 @@
         android:textSize="34sp" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="60dp"
-        android:layout_height="46dp"
-        android:backgroundTint="#6E0CC1"
-        android:contentDescription="boton de menu"
-        android:drawableBottom="@android:drawable/ic_menu_sort_by_size"
-        android:drawableTint="#0F0E0E" />
-
-    <Button
         android:id="@+id/button2"
         android:layout_width="227dp"
         android:layout_height="67dp"
@@ -57,8 +48,8 @@
         android:drawableTint="#0F0D0D"
         android:text="Todas las notas"
         android:translationX="91dp"
-        android:translationY="403dp"
-        app:layout_constraintBottom_toBotttomOf="button2" />
+        android:translationY="403dp"></Button>
+        <!--app:layout_constraintBottom_toBotttomOf="button2" /-->
 
     <Button
         android:id="@+id/button4"
@@ -69,7 +60,7 @@
         android:drawableTint="#070707"
         android:text="Calendario"
         android:translationX="91dp"
-        android:translationY="470dp"
-        app:layout_constraintBottom_toBotttomOf="button2" />
+        android:translationY="470dp"></Button>
+        <!--app:layout_constraintBottom_toBotttomOf="button2" /-->
 
 </FrameLayout>

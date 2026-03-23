@@ -14,10 +14,25 @@
         android:background="#5E35B1"
         android:title="Buscar"
         android:titleTextColor="#FFFFFF"
-        android:elevation="6dp"
+        android:elevation="2dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="60dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#6E0CC1"
+        android:contentDescription="boton de menu"
+        android:drawableBottom="@android:drawable/ic_menu_sort_by_size"
+        android:drawableTint="#0F0E0E"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:ignore="MissingConstraints" />
+
+
 
     <LinearLayout
         android:id="@+id/searchBar"

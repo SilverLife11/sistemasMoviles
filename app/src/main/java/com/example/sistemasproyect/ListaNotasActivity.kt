@@ -2,7 +2,6 @@ package com.example.sistemasproyect
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.widget.Button
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -15,41 +14,33 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.sistemasproyect.MainActivity
 import com.example.sistemasproyect.ui.theme.SistemasProyectTheme
-import kotlin.Any
 
-class MainActivity : AppCompatActivity() {
+class ListaNotasActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.layout_main)
+        setContentView(R.layout.ver_notas)
 
-        val btnNuevaNota = findViewById<Button>(R.id.button2)
+        val btnBuscar = findViewById<Button>(R.id.btnBuscar)
 
-        btnNuevaNota.setOnClickListener {
-            val intent = Intent(this, NuevaNotaActivity::class.java)
+        btnBuscar.setOnClickListener {
+            val intent = Intent(this, BusquedaActivity::class.java)
+            startActivity(intent)
+        }
+        val btnMenu = findViewById<Button>(R.id.button)
+
+        btnMenu.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
-        val btnTodas = findViewById<Button>(R.id.button3)
-
-        btnTodas.setOnClickListener {
-            val intent = Intent(this, ListaNotasActivity::class.java)
-            startActivity(intent)
-        }
-
-        val btnCalendario = findViewById<Button>(R.id.button4)
-
-        btnCalendario.setOnClickListener {
-            val intent = Intent(this, CalendarioActivity::class.java)
-            startActivity(intent)
-        }
     }
+
 }
 
 /*
-class MainActivity : ComponentActivity() {
+class ListaNotasActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
