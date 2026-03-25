@@ -3,6 +3,7 @@ package com.example.sistemasproyect
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.LinearLayout
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -34,6 +35,14 @@ class ListaNotasActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+
+        val btnNuevaNota = findViewById<LinearLayout>(R.id.btnNuevaNota1)
+
+        btnNuevaNota.setOnClickListener {
+            val intent = Intent(this, NuevaNotaActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 
